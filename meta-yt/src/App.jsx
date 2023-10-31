@@ -40,6 +40,9 @@ const App = () => {
   };
   return (
     <>
+      <div className="header">
+        <h1>React picking list</h1>
+      </div>
       <div className="App ">
         <div className="flex">
           <PlayStyle />
