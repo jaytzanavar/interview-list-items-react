@@ -1,0 +1,22 @@
+.parent {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.flex1 {
+  flex: 4;
+  text-align: center;
+}
+
+.flex2 {
+  flex: 4;
+  text-align: center;
+}
+
+.flex3 {
+  flex: 4;
+  text-align: center;
+}

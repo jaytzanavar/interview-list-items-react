@@ -3,6 +3,7 @@ import List from "./List";
 import Actions from "./Actions";
 import { useState } from "react";
 import { intersection, not } from "./utils";
+import PlayStyle from "./PlayStyle";
 
 const App = () => {
   const listData = [1, 2, 3, 4];
@@ -38,11 +39,18 @@ const App = () => {
     setCheckItems(not(checkedItems, rightCheckedItems));
   };
   return (
-    <div className="App flex">
-      <List items={listItems} handleToggle={handleToggle} />
-      <Actions moveRight={moveRIght} moveLeft={moveLeft} />
-      <List items={rightItems} handleToggle={handleToggle} />
-    </div>
+    <>
+      <div className="App ">
+        <div className="flex">
+          <PlayStyle />
+        </div>
+        <div className=" flex">
+          <List items={listItems} handleToggle={handleToggle} />
+          <Actions moveRight={moveRIght} moveLeft={moveLeft} />
+          <List items={rightItems} handleToggle={handleToggle} />
+        </div>
+      </div>
+    </>
   );
 };
 
